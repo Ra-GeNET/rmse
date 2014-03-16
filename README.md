@@ -7,5 +7,5 @@ This project was started as a news feed system for screens in smaller shops.
 
 ## Live Demo
 
-- [Demo editor](http://dia.devstar.ra-ge.net/editor)
+- [Demo editor](http://dia.devstar.ra-ge.net/slides)
 - [Demo slideshow](http://dia.devstar.ra-ge.net/)
