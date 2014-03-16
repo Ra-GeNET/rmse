@@ -1,0 +1,88 @@
+
+#branding { font-size: 25px; line-height: 15px; padding-left: 10px; color: white; text-shadow: 0px 0px 15px #000;}
+
+#toolbar {
+    background-color: #b52828;
+    width: 100%;
+    position: absolute; top: 0px; left: 0px; right: 0px;
+    height: 50px;
+    box-shadow: 0px 5px 15px #666;
+    z-index: 2000;
+}
+
+#slides-index {
+    position: absolute; top: 50px; bottom: 0px; left: 0px;
+    width: 40%;
+    
+}
+
+#slides {
+    position: absolute; top: 50px; bottom: 0px; right: 0px;
+    width: 60%;
+    
+}
+
+
+a.button {
+    background-color: #666;
+    font-size: 16px;
+    font-family: 'Alef', sans;
+    color: white;
+    padding: 5px 10px 5px 20px;
+    box-shadow: 2px 2px 5px black;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 0px 0px 4px 4px;
+    transition: 0.5s all;
+}
+
+a.button.new { background-color: #28b528; }
+a.button.new:hover { background-color: #6eb528; }
+a.button.destroy { background-color: maroon; }
+
+a.button:hover {
+    text-decoration: none;
+    background-color: black;
+    color: #ffe;
+    transition: 0.5s all;
+}
+
+#header {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    a {
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0px 0px 5px maroon;
+        transition: 0.5s all;
+    }
+    a:hover {
+        background-color: #28b5b5;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s all;
+    }
+    
+    a.special {
+        background-color: black;
+        font-family: 'Alef', sans;
+        color: white;
+        font-size: 16px;
+        box-shadow: 0px 0px 3px #333;
+    }
+    a.special:hover { background-color: #28b528; }
+    
+    a.active {
+        background-color: maroon;
+        color: white;
+    }
+    a.active:hover {
+        background-color: black;
+    }
+    
+}
+

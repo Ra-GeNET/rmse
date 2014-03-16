@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/css?family=Alef:400,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+body, html {
+    font-family: 'Alef', sans;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: #fdf6e3;
+}
+
+::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ed7925;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+.section {
+    
+    width: 20%;
+    min-width: 380px;
+    max-width: 700px;
+    margin-left: 5em;
+    margin-top: 3em;
+    display: inline-block;
+    vertical-align: top;
+
+    h2 {
+        margin: 0px 0px 1em 0px;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    p em {
+        color: #666;
+    }
+    
+    h2 em {
+        color: #ed7925;
+        font-style: normal;
+    }
+
+    a {
+        display: block;
+        font-weight: bold;
+        color: #00a393;
+    }
+}
+
+#header {
+    a {
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        padding: 5px 10px;
+        border-radius: 4px 4px 4px 4px;
+        box-shadow: 0px 0px 5px maroon;
+        transition: 0.5s all;
+    }
+    a:hover {
+        background-color: #28b5b5;
+        color: white;
+        text-decoration: none;
+        transition: 0.5s all;
+    }
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    
+    a.special {
+        background-color: black;
+        font-family: 'Alef', sans;
+        color: white;
+        font-size: 16px;
+        box-shadow: 0px 0px 3px #333;
+    }
+    a.special:hover { background-color: #28b528; }
+    
+    a.active {
+        background-color: maroon;
+        color: white;
+    }
+    a.active:hover {
+        background-color: black;
+    }
+    
+}
+
+#flash {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: black;
+    color: #ed7925;
+    font-size: 24px;
+    box-shadow: 0px 0px 10px #ed7925;
+    padding: 10px 25px;
+    opacity: 1;
+}
+
+h1 {
+    background-color: #b52828;
+    font-family: 'Alef', sans;
+    font-size: 28px;
+    color: white;
+    padding: 5px 10px;
+    font-weight: normal;
+    box-shadow: 0px 5px 15px #666;
+    text-shadow: 0px 0px 10px #333;
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 40%;
+    
+    .muted {
+        font-size: 14px;
+    }
+}
+
+a { text-decoration: none; color: navy; }
+a:hover { text-decoration: underline; }
+
+a.button {
+    background-color: #666;
+    font-size: 16px;
+    font-family: 'Alef', sans;
+    color: white;
+    padding: 5px 10px 5px 20px;
+    box-shadow: 0px 0px 5px black;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 0px 0px 4px 4px;
+    transition: 0.5s all;
+    float: right;
+}
+
+a.button.new { background-color: #28b528; }
+a.button.new:hover { background-color: #6eb528; }
+a.button.destroy { background-color: maroon; }
+
+a.button:hover {
+    text-decoration: none;
+    background-color: black;
+    color: #ffe;
+    transition: 0.5s all;
+}
+
+input[type=text], input[type=password], input[type=number], textarea {
+    border: none;
+    background-color:#666 ;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Alef', sans;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+}
+
+select {
+    padding: 5px 10px;
+    width: 422px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Alef', sans;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+}
+input[type=submit]:hover, input[type=submit]:focus {
+    opacity: 0.8;
+}
+
+table, form {
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(225,225,225,0.6);
+    
+}
+table {  border-collapse: collapse; max-width: 100%; }
+th { text-align: left; color: black; }
+td, th { padding: 5px 10px;  }
+td { border-top: 1px solid white; background-color: rgba(225,225,225,0.6)  }
+
+td a, td a:hover { color: navy; font-size: 12px;  }
+td a:hover { text-decoration: underline; }
+
+tr { transition: 0.5s background-color; }
+
+tr:hover {
+    transition: 0.5s background-color;
+    background-color: #ffc;
+}
+
+td.compact {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+td.number {
+    max-width: 5em;
+    text-align: right;
+    font-family: Ubuntu Mono;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+td.alternate {
+    background-color: rgba(180,180,180,0.6);
+}
+
+td.actions {
+    text-align: center;
+    width: 50px;
+}
+td.actions a {
+    font-size: 16px;
+    margin: 0px 5px 0px 5px ;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+td.actions a:hover { color: #4cc3e0 ;}
+td.actions.check a {
+    color: #28b528;
+}
+
+td.title a {
+    font-size: 18px;
+    color: maroon;
+}
+tr.separator td {
+    background-color: #eee;
+}
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: rgba(225,225,225,0.6)
+}
+
+div {
+   &.actions {
+    margin: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  label { border-bottom: 1px double red; color: maroon; }
+  input, textarea { outline: 1px solid red }
+}
+
+#error_explanation {
+  border: 5px solid #b52828;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 2px 7px 15px #666;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 16px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+

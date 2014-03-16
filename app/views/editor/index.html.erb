@@ -1,0 +1,14 @@
+<div id="toolbar">
+    <h2 id="branding">Markdown Slide Editor</h2>
+    <div id="header"><%= link_to 'Markdown references', 'https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet', :target => '_blank' %>
+    </div>
+
+</div>
+
+<div id="slides-index">
+    <iframe src='/slides/<%= @slides_url %>' name='index' width="100%" height="100%" frameBorder="0"></iframe>
+</div>
+
+<div id="slides">
+    <iframe src='/<%= @slides_url %>' name='slides' width="100%" height="100%" frameBorder="0"></iframe>
+</div>

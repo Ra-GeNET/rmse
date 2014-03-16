@@ -1,0 +1,13 @@
+  
+<%= form_for(@slide) do |f| %>
+
+    <%= f.text_field :title, :placeholder => 'Title', :id => 'title-field' %>
+  <div class="field ace">
+    <%= f.text_area :content, :id => "content_textarea" %>
+    <div id='content_ace' style='min-height: 800px; width: 100%; box-shadow: 0px 0px 15px black; margin-top: 20px;'></div>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
