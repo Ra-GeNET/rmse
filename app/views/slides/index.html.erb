@@ -1,25 +1,28 @@
 <%= link_to 'New Slide', new_slide_path, :class => 'button new' %>
 <br>
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @slides.each do |slide| %>
-      <tr>
-        <td><%= slide.title %></td>
-        <td><%= link_to ' Edit', edit_slide_path(slide), :class => 'entypo-pencil' %></td>
-        <td><%= link_to ' Destroy', slide, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'entypo-cup' %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+<div id="slides">
+    <iframe src='/<%= @slides_url %>' name='slides' width="100%" height="100%" frameBorder="0"></iframe>
+</div>
+<div id="md-editor">
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <% @slides.each do |slide| %>
+          <tr>
+            <td><%= slide.title %></td>
+            <td><%= link_to ' Edit', edit_slide_path(slide), :class => 'entypo-pencil' %></td>
+            <td><%= link_to ' Destroy', slide, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'entypo-cup' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+</div>
 

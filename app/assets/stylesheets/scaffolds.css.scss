@@ -83,8 +83,8 @@ body, html {
         transition: 0.5s all;
     }
     position: absolute;
-    top: 18px;
-    right: 10px;
+    bottom: 10px;
+    left: 10px;
     
     a.special {
         background-color: black;
@@ -104,6 +104,21 @@ body, html {
     }
     
 }
+
+
+
+#md-editor {
+    position: absolute; top: 0px; bottom: 0px; left: 0px;
+    width: 40%;
+    
+}
+
+#slides {
+    position: absolute; top: 0px; bottom: 0px; right: 0px;
+    width: 60%;
+    
+}
+
 
 #flash {
     position: fixed;
@@ -131,6 +146,7 @@ h1 {
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-right: 40%;
+    z-index: 20000;
     
     .muted {
         font-size: 14px;
@@ -151,10 +167,12 @@ a.button {
     display: inline-block;
     border-radius: 0px 0px 4px 4px;
     transition: 0.5s all;
-    float: right;
+    position: absolute;
+    right: 0px;    
+    z-index: 20000;
 }
 
-a.button.new { background-color: #28b528; }
+a.button.new { background-color: #28b528;}
 a.button.new:hover { background-color: #6eb528; }
 a.button.destroy { background-color: maroon; }
 
@@ -167,12 +185,13 @@ a.button:hover {
 
 input[type=text], input[type=password], input[type=number], textarea {
     border: none;
-    background-color:#666 ;
-    padding: 5px 0px 5px 0px;
+    background-color: #fdf6e3 ;
+    padding: 10px 0px 10px 10px;
     width: 100%;
     margin: 0px;
     font-family: 'Alef', sans;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 textarea {
@@ -198,7 +217,6 @@ input[type=submit] {
     font-family: 'Alef', sans;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 50px;
     border: 1px solid #ccc;
 }
 input[type=submit]:hover, input[type=submit]:focus {
@@ -208,7 +226,7 @@ input[type=submit]:hover, input[type=submit]:focus {
 table, form {
     width: 100%;
     font-size: 20px;
-    background-color: rgba(225,225,225,0.6);
+    background-color: #fdf6e3;
     
 }
 table {  border-collapse: collapse; max-width: 100%; }
