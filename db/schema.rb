@@ -11,9 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140313163616) do
+ActiveRecord::Schema.define(version: 20140317090413) do
 
-# Could not dump table "slides" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "slides", force: true do |t|
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.boolean  "has_background"
+    t.integer  "transition_id"
+    t.string   "color"
+    t.boolean  "has_color"
+  end
+
+  create_table "transitions", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

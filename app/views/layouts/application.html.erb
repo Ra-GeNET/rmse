@@ -4,11 +4,13 @@
   <title>Dia</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "jquery", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "jquery_ujs", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <script src="/js/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
 
 <%= yield %>
 

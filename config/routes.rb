@@ -1,9 +1,13 @@
 Dia::Application.routes.draw do
+  resources :transitions
+
   resources :slides
 
   root 'slideshow#index'
   
   get 'editor' => 'slides#index'
+  
+  get '/slides/:id/preview' => 'slides#preview'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

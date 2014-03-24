@@ -4,8 +4,16 @@
     <%= f.text_area :content, :id => "content_textarea" %>
     <div id='content_ace' style='min-height: 500px; width: 100%; box-shadow: 0px 0px 15px black;'></div>
   </div>
-  
+    
   <div class="actions">
+    <%= f.label 'Add custom background?' %>
+    <%= f.check_box :has_background %> <%= f.file_field :image %>
+    <br>
+    <%= f.label 'Pick background color?' %>
+    <%= f.check_box :has_color %> <%= f.text_field :color, :value => '#FDF6E3', :type => 'color' %>
+    <br>
+    <%= f.label 'Pick a transition style' %>
+    <%= f.select :transition_id, Transition.all.collect{|t|[t.name,t.id]} %>
     <%= f.submit %>
   </div>
 <% end %>
